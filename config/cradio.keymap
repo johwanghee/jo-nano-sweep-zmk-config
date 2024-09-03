@@ -19,8 +19,8 @@
                 
            default_layer {
         bindings = <
-        &kp Q     &kp W        &kp E       &kp R      &lt 8 T        &kp Y        &kp U     &kp I          &kp O          &kp P 
-        &mt LSFT A  &lt 5 S      &lt 1 D     &lt 3 F    &kp G          &kp H        &lt 4 J   &lt 2 K        &lt 6 L        &mt LSHFT SEMI
+        &kp Q       &kp W        &kp E       &kp R      &lt 8 T        &kp Y        &kp U     &kp I          &kp O          &kp P 
+        &mt LSFT A  &lt 1 S      &kp D       &lt 3 F    &kp G          &kp H        &lt 4 J   &lt 5 K        &lt 6 L        &mt LSHFT SEMI
         &kp Z       &mt LCTRL X  &mt LALT C  &kp V      &kp B          &kp N        &kp M     &mt LALT CMMA  &mt LCTRL DOT  &lt 9 SLASH
                                              &kp SPACE  &mt LGUI BSPC  &lt 7 SPACE  &kp BSPC
         >;
@@ -28,19 +28,10 @@
 
            1_layer {
         bindings = <
-        &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-        &trans      &kp F14     &none       &kp F15     &kp UP      &trans      &trans      &trans      &trans      &trans
-        &trans      &trans      &trans      &trans      &kp DOWN    &trans      &trans      &trans      &trans      &trans
-                                            &trans      &kp TAB     &trans      &trans
-        >;
-        };
-
-           2_layer {
-        bindings = <
-        &trans      &trans      &kp UP      &trans      &kp PG_UP      &kp HOME    &trans      &trans      &trans          &trans
-        &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN      &kp END     &kp LGUI    &none       &mt LCTRL LALT  &mt LC(A) LSFT
-        &trans      &trans      &trans      &trans      &trans         &trans      &trans      &trans      &trans          &trans
-                                            &trans      &trans         &trans      &trans
+        &trans      &trans      &trans          &trans      &trans         &trans      &kp F7      &kp F8      &kp F9      &kp F10
+        &trans      &none       &kp LCTRL       &kp LALT    &trans         &trans      &kp F4      &kp F5      &kp F6      &kp F11
+        &trans      &trans      &trans          &trans      &trans         &trans      &kp F1      &kp F2      &kp F3      &kp F12
+                                                &trans      &trans         &trans      &trans
         >;
         };
 
@@ -64,10 +55,10 @@
 
            5_layer {
         bindings = <
-        &trans      &trans      &trans          &trans      &trans         &trans      &kp F7      &kp F8      &kp F9      &kp F10
-        &trans      &none       &kp LCTRL       &kp LALT    &trans         &trans      &kp F4      &kp F5      &kp F6      &kp F11
-        &trans      &trans      &trans          &trans      &trans         &trans      &kp F1      &kp F2      &kp F3      &kp F12
-                                                &trans      &trans         &trans      &trans
+        &trans      &trans      &kp UP      &trans      &kp PG_UP      &kp HOME    &trans      &trans      &trans          &trans
+        &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN      &kp END     &kp LGUI    &none       &mt LCTRL LALT  &mt LC(A) LSFT
+        &trans      &trans      &trans      &trans      &trans         &trans      &trans      &trans      &trans          &trans
+                                            &trans      &trans         &trans      &trans
         >;
         };
 
