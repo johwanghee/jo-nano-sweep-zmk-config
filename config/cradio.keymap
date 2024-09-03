@@ -19,7 +19,7 @@
                 
            default_layer {
         bindings = <
-        &lt 8 Q     &kp W        &kp E       &kp R      &kp T          &kp Y        &kp U     &kp I          &kp O          &kp P 
+        &kp Q     &kp W        &kp E       &kp R      &lt 8 T        &kp Y        &kp U     &kp I          &kp O          &kp P 
         &mt LSFT A  &lt 5 S      &lt 1 D     &lt 3 F    &kp G          &kp H        &lt 4 J   &lt 2 K        &lt 6 L        &mt LSHFT SEMI
         &kp Z       &mt LCTRL X  &mt LALT C  &kp V      &kp B          &kp N        &kp M     &mt LALT CMMA  &mt LCTRL DOT  &lt 9 SLASH
                                              &kp SPACE  &mt LGUI BSPC  &lt 7 SPACE  &kp BSPC
@@ -82,28 +82,28 @@
 
            7_layer {
         bindings = <
-        &kp Q       &kp W       &kp COLON   &kp ESC      &none          &kp CAPS     &kp LANG2    &kp LANG1    &none    &kp DEL
-        &none       &none       &kp FSLH    &kp ENTER    &kp LG(ENTER)  &none        &none        &none        &none    &none
-        &none       &none       &none       &kp EXCL     &none          &to 0        &to 2        &to 9        &none    &none
+        &kp Q       &kp W       &kp COLON   &kp ESC      &trans         &kp CAPS     &kp LANG2    &kp LANG1    &trans   &kp DEL
+        &trans      &trans      &kp FSLH    &kp ENTER    &kp LG(ENTER)  &trans       &trans       &trans       &trans   &trans
+        &trans      &trans      &trans      &kp EXCL     &trans         &trans       &trans       &trans       &trans   &trans
                                             &kp LS(TAB)  &kp TAB        &none        &trans
         >;
         };
       
            8_layer {
         bindings = <
-        &none       &trans      &out OUT_USB  &out OUT_BLE   &kp EXCL       &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE  &trans      &trans
-        &trans      &trans      &trans        &trans         &trans         &trans       &trans       &trans      &trans      &trans
-        &trans      &bt BT_PRV  &bt BT_NXT    &trans         &trans         &trans       &trans       &trans      &trans      &trans
-                                              &out OUT_TOG   &bt BT_CLR     &trans       &trans
+        &trans      &trans      &trans      &trans       &none          &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE  &trans      &trans
+        &trans      &trans      &trans      &trans       &trans         &trans       &trans       &trans      &trans      &trans
+        &trans      &trans      &trans      &trans       &trans         &to 0        &to 2        &to 9       &trans      &trans
+                                            &trans       &trans         &trans       &trans
         >;
         };
         
            9_layer {
         bindings = <
-        &kp ESC     &kp Q       &kp W      &kp R      &kp T         &bt BT_CLR  &out OUT_BLE  &trans     &trans     &trans
-        &kp LSFT    &kp A       &kp S      &kp D      &kp F         &trans      &trans        &trans     &trans     &trans
-        &kp Z       &none       &none      &none      &kp G         &trans      &trans        &trans     &trans     &none
-                                           &trans     &trans        &trans      &trans
+        &trans      &trans      &trans      &trans       &trans         &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &out OUT_TOG  &bt BT_CLR_ALL
+        &trans      &trans      &trans      &trans       &trans         &trans         &trans        &trans        &bt BT_NXT    &bt BT_CLR
+        &trans      &trans      &trans      &trans       &trans         &trans         &trans        &trans        &trans        &none
+                                            &trans       &trans         &trans         &trans
         >;
         };
         
