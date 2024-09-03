@@ -1,5 +1,26 @@
-on: [push, pull_request, workflow_dispatch]
+name: Build ZMK firmware
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    paths:
+      - "config/keymap/**"
+      - "config/*.conf"
+      - "config/*.keymap"
+      - "boards/**"
+      - "build.yaml"
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
+    with:
+      keymap_patterns: "config/*.keymap"
+      config_path: "keymap_drawer.config.yaml" 
+      output_folder: "keymap-drawer"
+      parse_args: ""
+      draw_args: "-k paroxysm"
+      amend_commit: true
