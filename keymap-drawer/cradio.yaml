@@ -308,10 +308,45 @@ layers:
   - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
   - {t: default, h: '$$mdi:toggle-switch$$'}
   - {t: '2', h: '$$mdi:toggle-switch$$'}
+  - {t: '9', h: '$$mdi:toggle-switch$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  '9':
+  - T
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - {t: default, h: '$$mdi:toggle-switch$$'}
+  - G
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - B
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - M
+  - CMMA
+  - P
+  - /
+  - $$mdi:keyboard-space$$
+  - {t: BSPC, h: '$$mdi:apple-keyboard-command$$'}
+  - ENTER
+  - Esc
